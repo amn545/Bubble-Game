@@ -1,0 +1,145 @@
+@font-face {
+     font-family: Neue;
+     src: url(./Fonts/PPNeueMachina_\ Light.ttf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(./Fonts/Gilroy-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: Neue;
+    /* cursor: none;       */
+}
+
+html, body{
+    /* scrollbar-width: none; */
+    width: 100%;
+    height: 100%;  
+    background-color: #fff;     
+}
+
+#cursor{
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+    background-color: #fff;
+    z-index: 1;
+    border: 0.1px solid #fff; 
+    border-radius: 50%;         
+    position: fixed;
+    /* box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.363);  */
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color:  #9AB89B;
+}
+
+
+#panel{
+    width: 85%;
+    overflow: hidden;
+    height: 85%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#ptop{
+    width: 100%;
+    height: 70px;
+    background-color: #486848;
+    display: flex;
+    color: #fff;
+    padding: 0% 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#elem h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#elem h3 {
+    display: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.box{
+    padding: 10px 20px;
+    color: #609960;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pbtm{
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 15px;
+}
+
+#bubble{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    background: #486848;
+    box-shadow: 7px 7px 14px #dddddd,-7px -7px 14px #ffffff;
+}
+
+#bubble:hover{
+    background-color: rgb(50, 75, 50);
+    cursor: pointer;
+}
+
+@media (max-width: 50rem) {
+    #elem h2{
+        display: none;
+    }
+
+    #elem h3{
+        display: block;
+    }
+
+    .box{
+        padding: 5px 10px;
+        color: #609960;
+        font-weight: 600;
+        font-size: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
